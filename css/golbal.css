@@ -1,0 +1,150 @@
+:root {
+  --white-color: white;
+  --black-color: black;
+  --primary-color: #eb8092;
+  --header-height: 120px;
+  --navbar-height: 34px;
+  --header-with-search-height: calc(
+    var(--header-height) - var(--navbar-height)
+  );
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 80%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #666;
+}
+/* Button style */
+.btn {
+  margin-top: 60px;
+  height: 34px;
+  width: 200px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  outline: 0;
+  cursor: pointer;
+  background-color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn--primary {
+  background-color: #eb8092;
+  color: white;
+}
+.btn.btn--sze-s {
+  height: 32px;
+  font-size: 12px;
+  margin-top: auto;
+}
+/* animation */
+@keyframes fadeIN {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes grow {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
+/* Resposive */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.grid__full-width {
+  width: 100%;
+}
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.grid__colum {
+  width: 100%;
+}
+.grid__colum-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 20%;
+}
+.grid__colum-2-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+.grid__colum-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.33334%;
+}
+/* Selection */
+.select-input {
+  min-width: 200px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+.select-input:hover .select-input__list {
+  display: block;
+}
+.select-input__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  padding-left: 8px 16px;
+  list-style: none;
+  padding-left: 0;
+  display: none;
+  cursor: pointer;
+}
+.select-input__label {
+  font-size: 1.2rem;
+}
+.select-input__icon {
+  font-size: 1.2rem;
+  margin: 0 16px 0 8px;
+  position: relative;
+  top: 1px;
+}
+
+.select-input__link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: var(--black-color);
+}
+.select-input__link:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}

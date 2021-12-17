@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Graden</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/golbal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css ">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid"> 
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-title">
+                            <span class="header__navbar-title--no-pointer"> Chào mừng đến với cửa hàng trực tuyến của chúng tôi</span></li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                       <li class="header__navbar-item">
+                           <a href="" class="header__navbar-item-link"><i class="header__navbar-icon home-product-item__gold fas fa-bell"></i>Thông Báo</a> 
+                       </li>
+                       <li class="header__navbar-item">
+                           <a href="" class="header__navbar-item-link"><i class="header__navbar-icon far fa-question-circle"></i>Trợ Giúp</a>
+                      </li>
+                       <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"> Đăng Ký</li>
+                       <li class="header__navbar-item header__navbar-item--strong"> Đăng Nhập</li>   
+                    </ul>
+                </nav>
+                <!-- header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img class="header__logo-img"  src="./img/leo-beautique-logo-1585129254.jpg" alt="logo">
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            
+                            <!--Search with history  -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">  
+                                    <li class="header__search-history-item">
+                                        <a class="header__search-history-link" href="">Kem dưỡng ẩm</a>
+                                    </li>
+                                    <li class="header__search-history-item"> 
+                                        <a class="header__search-history-link" href="">Toner</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Sản phẳm</span>
+                            <i class="header__search-select-icon home-product-item__gold fas fa-chevron-down"></i>
+                            <ul class="header__search-option">  
+                                <li class="header__search-option-item">Sản phẩm</li>
+                                <li class="header__search-option-item"> Tin tức</li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn ">
+                            <i class="header__search__btn-icon home-product-item__gold fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- Gio hang -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon home-product-item__gold fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                           <!-- Không có sản phẩm -->
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img  src="./img/gio hang trong.png" alt="" class="header__cart-list--no-cartt-img">
+                                <span class="header__cart-list--no-cart-msg">Chưa có sản phẩm</span>      
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        <main class="main"> 
+            <div class="container">
+                <div class="grid">             
+                    <nav class="menu">                                        
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <h3 class="menu__heading">
+                                <i class="menu__heading-icon home-product-item__gold fas fa-bars"></i>
+                            </h3>
+                            </li>
+                            <li class="menu-item">
+                                <a href="trangdiem.html" class="menu-item__link">Trang điểm</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="chamsocda.html" class="menu-item__link">Chăm sóc da</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="chamsoctoc.html" class="menu-item__link">Chăm sóc tóc</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-item__link">Chăm sóc toàn thân</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-item__link">Phụ kiện</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+             </div>
+             <section class="bannar">
+             <div class="grid">
+                  <div class="bannar-container">
+                       <img class="barnar-img" src="./img/leo_beautique_banner1-h2.jpg" alt="">
+                <img class="barnar-img" src="./img/leo_beautique_banner2-h1.jpg" alt="">
+                  </div>
+                
+          
+             </div>
+               </section>
+             
+             <div class="app__container">
+                 <div class="grid">
+                     <div class="grid__colum ">
+                         <div class="grid__colum">
+                            <div class="home-filter">
+                                <span class="home-filter__label">Sắp xếp theo</span>
+                                <button class="home-filter__btn btn">Phổ biến</button>
+                                <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                                <button class="home-filter__btn btn">Bán chạy</button> 
+
+                                <div class="select-input">
+                                    <span class="select-input__label">Giá</span>
+                                    <i class="select-input__icon home-product-item__gold fas fa-caret-down"></i>
+                                    <ul class=" select-input__list">
+                                        <li class=" select-input__item">
+                                            <a href="" class="select-input__link">Giá thấp đến cao</a>
+                                        </li>
+                                        <li class=" select-input__item">
+                                            <a href="" class="select-input__link">Giá cao đến thap</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="home-filter__page">
+                                    <span class="home-filter__page-number">
+                                        <span class="home-filter__page-curent">
+                                            1
+                                        </span>/14
+                                    </span>
+                                    <div class="home-filter__page-control">
+                                        <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                            <i class="home-filter__page-icon home-product-item__gold fas fa-chevron-left"></i> 
+                                        </a>
+                                        <a href="" class="home-filter__page-btn">
+                                            <i class="home-filter__page-icon home-product-item__gold fas fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+
+<!-------------Chăm sóc da-------->
+
+<div class="app__container2">
+    <div class="grid">
+        <div class="grid__colum ">
+            <div class="grid__colum">             
+               <div class="home-product">
+                   <div class="home-product__header">
+                        <h1 class="home-product__heading-top">Sản phẩm chăm sóc tóc</h1>
+                   </div>
+                  
+                   <div class="grid__row">
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/daugoi.jpg" alt="">
+                                <h4 class="home-product-item__name">Bộ dầu gội xả giúp dày tóc, giảm rụng tóc cao cấp HairBurst For Longer Stronger Hair</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">699,000đ</span>
+                                   <span class="home-product-item__price-old">1,020,000đ</span>
+                                  
+                               </div>
+                        </div> 
+
+                       </div>
+
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/kemutoc.jpg" alt="">
+                                <h4 class="home-product-item__name">Kem ủ TRESemmé Keratin Smooth Tinh Dầu Argan Vào nếp suôn mượt 180ML</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">106,000đ</span>
+                                   <span class="home-product-item__price-old">135,000đ</span>
+                                  
+                               </div>
+                        </div> 
+                       </div>
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/dau-goi-vi-jully.jpg" alt="">
+                                <h4 class="home-product-item__name">Dầu gội bưởi Vi Jully</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">280,000đ</span>
+                                   <span class="home-product-item__price-old">300,000đ</span>
+                                  
+                               </div>
+                        </div> 
+
+                       </div>
+                       
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/tinh-dau-phuc-hoi-toc-kho-yeu-haneda-collagen-60ml.jpg" alt="">
+                                <h4 class="home-product-item__name">Tinh dầu dưỡng Haneda collagen</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">170,000đ</span>
+                                   <span class="home-product-item__price-old">196,000đ</span>
+                                  
+                               </div>
+                               
+                        </div> 
+
+                       </div>
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/dau-goi-lam-day-toc-biotin-_-collagen-ogx-385ml.jpg" alt="">
+                                <h4 class="home-product-item__name">Bộ dầu gội- xả Biotin & Collagen OGX</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">205,000đ</span>
+                                   <span class="home-product-item__price-old">295,000đ</span>
+                                  
+                               </div>
+                        </div> 
+                        
+
+                       </div>
+
+                   </div>
+
+               </div>
+        </div>
+    </div>
+</div>
+<div class="app__container2">
+    <div class="grid">
+        <div class="grid__colum ">
+            <div class="grid__colum">             
+               <div class="home-product">
+                   <div class="grid__row">
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/Pomelo-Duong-Toc-Tinh-Dau-Vo-Buoi-2221.jpg" alt="">
+                                <h4 class="home-product-item__name">Pomelo - Dưỡng Tóc Tinh Dầu Vỏ Bưởi Cocoon</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">95,000đ</span>
+                                   
+                                  
+                               </div>
+                               
+                        </div> 
+
+                       </div>
+
+                       <div class="grid__colum-2">
+                           <!-- product item -->
+                           <div class="home-product-item">
+                               <img class="home-product-item__img" src=".//img/ELSEVE.jpg" alt="">
+                                <h4 class="home-product-item__name">Bộ sản phẩm chăm sóc tóc chống 5 dấu hiệu hư tổn 3 bước L'Oreal Paris Total Repair 5</h4>
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-new">358,000đ</span>
+                                   
+                                  
+                               </div>
+                              
+                        </div> 
+                                          
+                    </div>
+                       
+                        
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                   <div class="grid__colum-2">
+                       <h3 class="footer__heading">THÔNG TIN</h3>
+                       <ul class="footer__list">
+                            <li class="footer-item"><a href="" class="footer-item__link">Beautic là gì?</a></li>
+                            <li class="footer-item"> <a href="" class="footer-item__link">Quy chê hoạt động</a></li>
+                            <li class="footer-item"><a href="" class="footer-item__link">Liên hệ</a></li>
+                            <li class="footer-item"><a href="" class="footer-item__link">Gửi yêu cầu hỗ trợ</a></li>
+                       </ul>
+                   </div>
+                   <div class="grid__colum-2">
+                        <h3 class="footer__heading">CÂU HỎI THƯỜNG GẶP</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item"><a href="" class="footer-item__link"> Sản phẩm cần đổi hết hàng?</a></li>
+                            <li class="footer-item"> <a href="" class="footer-item__link">Hướng dẫn cách tra cứu mã đơn hàng</a></li>
+                            <li class="footer-item"><a href="" class="footer-item__link">Đơn hàng nhận được bị thiếu so với đơn hàng đã đặt/a></li>
+                            <li class="footer-item"><a href="" class="footer-item__link">Sản phẩm nhận được không giống với hình ảnh trên website?</a></li>
+                        </ul>
+                   </div>
+                   <div class="grid__colum-2">
+                        <!-- <h3 class="footer__heading">Về chúng tôi</h3> -->
+                   </div>
+                   <div class="grid__colum-2">
+                    <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+                    <ul class="footer__list">
+                        <li class="footer-item"> <a href="" class="footer-item__link">Giải đáp thắc mắc</a></li>
+                        <li class="footer-item">  <a href="" class="footer-item__link">Hướng dẫn mua hàng</a></li>
+                        <li class="footer-item"><a href="" class="footer-item__link">Thanh toán và Vận chuyển</a></li>
+                        <li class="footer-item"> <a href="" class="footer-item__link">Chính sách đổi trả</a></li>
+                    </ul>
+                   </div>
+                   <div class="grid__colum-2">
+                        <h3 class="footer__heading">LIÊN KẾT</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook-square"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram-square"></i>
+                                    Instagam
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon far fa-envelope"></i>
+                                    Gmail
+                                </a>
+                            </li>
+                        </ul>
+                   </div> 
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+             
+</body>
+</html>
